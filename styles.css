@@ -1,0 +1,314 @@
+/* Elements */
+
+body {
+	background-color: rgb(131, 134, 141);
+	color: black;
+	line-height: 0;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+.square {
+	
+	height: 16em;
+	width: 16em;
+	background-color: lightseagreen;
+	position: relative;
+	left: 10em;
+	top: 20%;
+	box-shadow: 
+	10px 20px 30px rgb(158, 187, 255)inset,
+	0 30px 30px 15px hsl(236, 100%, 74%);
+	
+	
+
+}
+.square2 {
+	
+	height: 300px;
+	width: 300px;	
+	background-color:rgb(255, 255, 104);
+	position: absolute;
+	left: 60em;
+	top: 50%;
+
+
+}
+.square3 {
+	
+	height: 200px;
+	width: 200px;	
+	background-color:rgb(255, 255, 104);
+	position: absolute;
+	left: 30em;
+	top: 20%;
+
+}
+.square4 {
+	
+	height: 100px;
+	width: 100px;	
+	background-color:rgb(255, 255, 104);
+	position: absolute;
+	right: 30em;
+	bottom: 50%;
+
+}
+.square5 {
+	
+	height: 500px;
+	width: 500px;	
+	background-color:rgb(255, 255, 104);
+	position: relative;
+	right: 30em;
+	top: 50%;
+
+}
+.square6 {
+	
+	height: 100px;
+	width: 100px;	
+	background-color:rgb(255, 255, 104);
+	position: absolute;
+	right: 30em;
+	bottom: 50%;
+
+}
+.square7 {
+	
+	height: 50em;
+	width: 10em;	
+	background-color:rgb(255, 255, 104);
+	position: absolute;
+	left: 5em;
+	bottom: 5%;
+	transform: scale(4,2)
+			rotate(20deg);
+
+}
+
+
+.circle {
+	width: 20em;
+	height: 20em;
+	background-color: rgb(255, 77, 45);
+	border-radius: 50%;
+	position: absolute;
+	left: 20%;
+	top: 20%;
+}
+
+.circle0 {
+	width: 15em;
+	height: 15em;
+	background-color: rgb(255, 77, 45);
+	border-radius: 50%;
+	position: absolute;
+	left: 80%;
+	top: 2%;
+}
+
+.circle1 {
+	width: 5em;
+	height: 5em;
+	background-color: rgb(42, 20, 139);
+	border-radius: 50%;
+	position: absolute;
+	right: 70%;
+	top: 20%;
+}
+.circle2 {
+	width: 100em;
+	height: 100em;
+	background-color: rgb(20, 21, 131);
+	border-radius: -70%;
+	position: absolute;
+	right: 80%;
+	bottom: 10%;
+}
+
+.circle3 {
+	width: 5em;
+	height: 5em;
+	background-color: rgb(37, 16, 156);
+	border-radius: 50%;
+	position: absolute;
+	left: 80%;
+	bottom: 10%;
+}
+.circle4 {
+	width: 5em;
+	height: 5em;
+	background-color: rgb(9, 61, 139);
+	border-radius: 50%;
+	position: absolute;
+	left: 80%;
+	top: 10%;
+}
+.circle5 {
+	width: 5em;
+	height: 5em;
+	background-color: rgb(17, 20, 170);
+	border-radius: 50%;
+	position: absolute;
+	right: 30%;
+	top: 30%;
+}
+.circle6 {
+	width: 5em;
+	height: 5em;
+	background-color: rgb(16, 19, 163);
+	border-radius: 50%;
+	position: absolute;
+	right: 50%;
+	bottom: 30%;
+}
+
+.circle7 {
+	width: 8em;
+	height: 8em;
+	background-color: rgb(67, 108, 185);
+	border-radius: 50%;
+	position: absolute;
+	left: 60%;
+	bottom: 20%;
+	box-shadow: 
+	10px 20px 30px rgb(158, 187, 255)inset,
+	60px 100px 100px 15px hsl(236, 100%, 84%);
+}
+.circle8 {
+	width: 5em;
+	height: 5em;
+	background-color: rgb(80, 92, 255);
+	border-radius: 50%;
+	position: absolute;
+	left: 6em;
+	top: 12em;
+}
+
+
+
+  .ball {
+	display: inline-block;
+	width: 200%;
+	height: 200%;
+	border-radius: 100%;
+	position: absolute;
+	top:-25em;
+	left:-26em;
+	background: radial-gradient(circle at bottom, #fdff77, #76deef 10%, #055194 80%, #062745 100%); }
+
+	.ball:after {
+	  content: "";
+	  position: absolute;
+	  display: none;
+	  top: 5%;
+	  left: 10%;
+	  width: 80%;
+	  height: 80%;
+	  border-radius: 100%;
+	  -webkit-filter: blur(1px);
+	  filter: blur(1px);
+	  z-index: 2;
+	  -webkit-transform: rotateZ(-30deg);
+	  transform: rotateZ(-30deg); }
+	.ball .shadow {
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  background: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+	  -webkit-transform: rotateX(90deg) translateZ(-160px);
+	  transform: rotateX(90deg) translateZ(-160px);
+	  z-index: 1; }
+	.ball.plain {
+	  background: rgb(255, 158, 67); }
+	  .ball.plain:before, .ball.plain:after {
+		display: none; }
+	.ball.bubble {
+	  background: radial-gradient(circle at 50% 55%, rgba(255, 167, 67, 0.9), rgba(255, 205, 131, 0.9) 40%, rgba(225, 238, 255, 0.8) 60%, rgba(126, 180, 255, 0.7));
+	  -webkit-animation: bubble-anim 2s ease-out infinite;
+	  animation: bubble-anim 2s ease-out infinite; }
+	  .ball.bubble:before {
+		-webkit-filter: blur(0);
+		filter: blur(0);
+		height: 80%;
+		width: 40%;
+		background: radial-gradient(circle at 130% 130%, rgba(141, 123, 18, 1) 0, rgba(255, 255, 255, 1) 46%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 58%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
+		-webkit-transform: translateX(131%) translateY(58%) rotateZ(168deg) rotateX(10deg);
+		transform: translateX(131%) translateY(58%) rotateZ(168deg) rotateX(10deg); }
+	  .ball.bubble:after {
+		display: block;
+		background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%); }
+  
+  .stage {
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	margin: 20px;
+	-webkit-perspective: 1200px;
+	-moz-perspective: 1200px;
+	-ms-perspective: 1200px;
+	-o-perspective: 1200px;
+	perspective: 1200px;
+	-webkit-perspective-origin: 50% 50%;
+	-moz-perspective-origin: 50% 50%;
+	-ms-perspective-origin: 50% 50%;
+	-o-perspective-origin: 50% 50%;
+	perspective-origin: 50% 50%;
+  }
+  body {
+	width: 300px;
+	margin: 20px auto;
+	background:  #acacac ;
+	background-repeat: no-repeat;
+  }
+  
+  @-webkit-keyframes bubble-anim {
+	0% {
+	  -webkit-transform: scale(1);
+	  transform: scale(1); }
+  
+	20% {
+	  -webkit-transform: scaleY(0.95) scaleX(1.05);
+	  transform: scaleY(0.95) scaleX(1.05); }
+  
+	48% {
+	  -webkit-transform: scaleY(1.1) scaleX(0.9);
+	  transform: scaleY(1.1) scaleX(0.9); }
+  
+	68% {
+	  -webkit-transform: scaleY(0.98) scaleX(1.02);
+	  transform: scaleY(0.98) scaleX(1.02); }
+  
+	80% {
+	  -webkit-transform: scaleY(1.02) scaleX(0.98);
+	  transform: scaleY(1.02) scaleX(0.98); }
+  
+	97%, 100% {
+	  -webkit-transform: scale(1);
+	  transform: scale(1); } }
+  
+  @keyframes bubble-anim {
+	0% {
+	  -webkit-transform: scale(1);
+	  transform: scale(1); }
+  
+	20% {
+	  -webkit-transform: scaleY(0.95) scaleX(1.05);
+	  transform: scaleY(0.95) scaleX(1.05); }
+  
+	48% {
+	  -webkit-transform: scaleY(1.1) scaleX(0.9);
+	  transform: scaleY(1.1) scaleX(0.9); }
+  
+	68% {
+	  -webkit-transform: scaleY(0.98) scaleX(1.02);
+	  transform: scaleY(0.98) scaleX(1.02); }
+  
+	80% {
+	  -webkit-transform: scaleY(1.02) scaleX(0.98);
+	  transform: scaleY(1.02) scaleX(0.98); }
+  
+	97%, 100% {
+	  -webkit-transform: scale(1);
+	  transform: scale(1); } }
